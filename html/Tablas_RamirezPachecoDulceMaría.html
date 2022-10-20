@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_page2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Tablas en HTML&nbsp;</h1>
+</header>
+<nav>
+  <ul id="menu_interno">
+    <li><a href="#m1">Tabla desde codigo&nbsp; &nbsp;&nbsp;</a></li>
+    <li><a href="#m2">Tabla con estilo css y uso de rowspan</a></li>
+    <li><a href="#m3">Tabla con cebras en horizontal o filas&nbsp;</a></li>
+    <li><a href="#m4">Tabla con cebras en vertical o columnas&nbsp;</a></li>
+    <li><a href="#m5">Tabla flotante (hover)&nbsp;</a></li>
+	  <li><a href="#m6">Tabla receptiva&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2 id="m1">Tabla desde codigo&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed illum, excepturi facilis quas molestiae, voluptatibus officia minus at eos eligendi aliquid, odit totam optio. Quae magnam amet aut ipsa voluptatibus autem impedit perspiciatis. Molestiae assumenda aperiam temporibus eius autem pariatur tempore cupiditate nemo labore, cumque cum, aliquid debitis suscipit.Este es el contenido de la etiqueta P de diseño</p>
+    <table border="1">
+	  	<thead></thead>
+		  <tr>
+		  	<th>Nombre</th>
+			<th>Taller</th>
+			<th>Email</th>
+			<th>Cuota de Taller</th>
+		  </tr>
+		<tbody>
+		  <tr>
+			<td>Rosa Lopez</td>
+			<td>Pintura</td>
+			<td>rosa@hotmail.com</td>
+			<td>800</td>
+		  </tr>
+			<tr>
+				<td>Rodrigo Hernandez</td>
+				<td>Foto</td>
+				<td>rodi14@outlook.com</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<td>Miguel Díaz</td>
+				<td>Pintura</td>
+				<td>mike@gmail.com</td>
+				<td>800</td>
+			</tr>
+			<tr>
+				<td>Veronica Sanchez</td>
+				<td>Foto</td>
+				<td>verito23@gmail.com</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<td>Fernando Gomez</td>
+				<td>Forja</td>
+				<td>fer_34@outlook.com</td>
+				<td>300</td>
+			</tr>
+	  </tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Total de inscripción</td>
+				<td>4300</td>
+			</tr>
+		</tfoot>
+    </table>
+</section>
+  <section>
+<h2 id="m2">Tabla con estilo css y uso de rowspan&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed illum, excepturi facilis quas molestiae, voluptatibus officia minus at eos eligendi aliquid, odit totam optio. Quae magnam amet aut ipsa voluptatibus autem impedit perspiciatis. Molestiae assumenda aperiam temporibus eius autem pariatur tempore cupiditate nemo labore, cumque cum, aliquid debitis suscipit.Este es el contenido de la etiqueta P de diseño</p>
+    <table id="tabla_1">
+      <thead>
+      </thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Taller</th>
+        <th>Email</th>
+        <th>Cuota de Taller</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>Rosa Lopez</td>
+          <td>Pintura</td>
+          <td>rosa@hotmail.com</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Rodrigo Hernandez</td>
+          <td>Foto</td>
+          <td>rodi14@outlook.com</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>Miguel Díaz</td>
+          <td>Pintura</td>
+          <td>mike@gmail.com</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Veronica Sanchez</td>
+          <td>Foto</td>
+          <td>verito23@gmail.com</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>Fernando Gomez</td>
+          <td>Forja</td>
+          <td>fer_34@outlook.com</td>
+          <td>300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+         <!-- <td></td>
+          <td></td>-->
+          <td colspan="3" style="background-color: chartreuse; font-weight: bold; color: brown">Total de inscripción</td>
+          <td>4300</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <h2 id="m3">Tabla con cebras en horizontal o filas&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed illum, excepturi facilis quas molestiae, voluptatibus officia minus at eos eligendi aliquid, odit totam optio. Quae magnam amet aut ipsa voluptatibus autem impedit perspiciatis. Molestiae assumenda aperiam temporibus eius autem pariatur tempore cupiditate nemo labore, cumque cum, aliquid debitis suscipit.Este es el contenido de la etiqueta P de diseño</p>
+    <table border="1" cellspacing="5" id="tabla2">
+      <thead>
+		 <tr>
+          <th scope="col">&nbsp;Nombre<br>
+            <br></th>
+<th scope="col">&nbsp;Correo Electronico</th>
+          <th scope="col">&nbsp;Telefono</th>
+          <th scope="col">Edad&nbsp;</th>
+          <th scope="col">&nbsp;Deporte</th>
+        </tr>
+		</thead>
+		<tbody>
+        <tr>
+          <td>&nbsp;Luis Lezama</td>
+          <td>&nbsp;luisito@gmail.com</td>
+          <td>&nbsp;2224567890</td>
+          <td>15</td>
+          <td>&nbsp;Fut</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Angela Solis</td>
+          <td>&nbsp;alelita@outlook.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;13</td>
+          <td>&nbsp;Voleivol</td>
+        </tr>
+        <tr>
+          <td>Maria Fernandez</td>
+          <td>&nbsp;fer12@gmail.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;12</td>
+          <td>&nbsp;Basket</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Gerardo Luna</td>
+          <td>&nbsp;gerard@gmail.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;16</td>
+          <td>&nbsp;Fut</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2 id="m4">Tabla con cebras en vertical o columnas&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed illum, excepturi facilis quas molestiae, voluptatibus officia minus at eos eligendi aliquid, odit totam optio. Quae magnam amet aut ipsa voluptatibus autem impedit perspiciatis. Molestiae assumenda aperiam temporibus eius autem pariatur tempore cupiditate nemo labore, cumque cum, aliquid debitis suscipit.Este es el contenido de la etiqueta P de diseño</p>
+    <table border="1" cellspacing="5" id="tabla_4">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;Nombre<br>
+            <br></th>
+          <th scope="col">&nbsp;Correo Electronico</th>
+          <th scope="col">&nbsp;Telefono</th>
+          <th scope="col">Edad&nbsp;</th>
+          <th scope="col">&nbsp;Deporte</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;Luis Lezama</td>
+          <td>&nbsp;luisito@gmail.com</td>
+          <td>&nbsp;2224567890</td>
+          <td>15</td>
+          <td>&nbsp;Fut</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Angela Solis</td>
+          <td>&nbsp;alelita@outlook.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;13</td>
+          <td>&nbsp;Voleivol</td>
+        </tr>
+        <tr>
+          <td>Maria Fernandez</td>
+          <td>&nbsp;fer12@gmail.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;12</td>
+          <td>&nbsp;Basket</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Gerardo Luna</td>
+          <td>&nbsp;gerard@gmail.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;16</td>
+          <td>&nbsp;Fut</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2 id="m5">Tabla flotante (hover)&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed illum, excepturi facilis quas molestiae, voluptatibus officia minus at eos eligendi aliquid, odit totam optio. Quae magnam amet aut ipsa voluptatibus autem impedit perspiciatis. Molestiae assumenda aperiam temporibus eius autem pariatur tempore cupiditate nemo labore, cumque cum, aliquid debitis suscipit.Este es el contenido de la etiqueta P de diseño</p>
+    <table border="1" cellspacing="5" id="tabla_5">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;Nombre<br>
+            <br></th>
+          <th scope="col">&nbsp;Correo Electronico</th>
+          <th scope="col">&nbsp;Telefono</th>
+          <th scope="col">Edad&nbsp;</th>
+          <th scope="col">&nbsp;Deporte</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;Luis Lezama</td>
+          <td>&nbsp;luisito@gmail.com</td>
+          <td>&nbsp;2224567890</td>
+          <td>15</td>
+          <td>&nbsp;Fut</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Angela Solis</td>
+          <td>&nbsp;alelita@outlook.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;13</td>
+          <td>&nbsp;Voleivol</td>
+        </tr>
+        <tr>
+          <td>Maria Fernandez</td>
+          <td>&nbsp;fer12@gmail.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;12</td>
+          <td>&nbsp;Basket</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Gerardo Luna</td>
+          <td>&nbsp;gerard@gmail.com</td>
+          <td>&nbsp; 2224567890</td>
+          <td>&nbsp;16</td>
+          <td>&nbsp;Fut</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="seccion_1">
+    <h2 id="m6">Tabla receptiva</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis amet, doloribus, nulla laboriosam, recusandae vel sunt velit expedita illo quam hic nihil est at aut repudiandae impedit unde ex quae, cupiditate ut quod quas dolorum eum? Hic, sint libero.</p>
+    <div id="tabla_respectiva">
+      <table border="1" cellspacing="5" id="tabla_6">
+        <tbody>
+          <tr>
+            <th scope="col">Nombre&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">&nbsp;Puntos</th>
+            <th scope="col">&nbsp;Puntos</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">&nbsp;Puntos</th>
+            <th scope="col">&nbsp;Puntos</th>
+          </tr>
+          <tr>
+            <td>&nbsp;Julia</td>
+            <td>&nbsp;40</td>
+            <td>&nbsp;25</td>
+            <td>&nbsp;36</td>
+            <td>80</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;56</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;90</td>
+            <td>90</td>
+            <td>&nbsp;40</td>
+            <td>&nbsp;50</td>
+            <td>&nbsp;50</td>
+            <td>&nbsp;70</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Mario</td>
+            <td>&nbsp;30</td>
+            <td>&nbsp;70</td>
+            <td>&nbsp;70</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;50</td>
+            <td>&nbsp;60</td>
+            <td>80</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;70</td>
+            <td>&nbsp;30</td>
+            <td>&nbsp;60</td>
+            <td>&nbsp;70</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Fernanda</td>
+            <td>&nbsp;50</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;100</td>
+            <td>30</td>
+            <td>&nbsp;60</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;87</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;10</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Hugo</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;70</td>
+            <td>&nbsp;100</td>
+            <td>60</td>
+            <td>90</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;100</td>
+            <td>100</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</section>
+</main>
+<footer>
+  <h6>Elaborado por Ramírez Pacheco Dulce María</h6>
+&nbsp;</footer>
+</body>
+</html>
